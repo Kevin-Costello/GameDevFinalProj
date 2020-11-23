@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55ee659e6cd42341a415eb5df76851b, type: 3}
+  m_Name: TestGun
+  m_EditorClassIdentifier: 
+  name: Cool Gun
+  gunModel: {fileID: 0}
+  bullet: {fileID: 4853855128019012106, guid: 2e6def6e490b6524fa89f7cc1aa6b249, type: 3}
+  damage: 1
+  ammoCapacity: 100
+  bulletsPerShot: 1
+  rateOfFire: 0.1
+  shotForce: 75
+  spread: 0
+  reloadTime: 1
+  isBouncing: 0
+  isExplosive: 1

@@ -153,8 +153,8 @@ public class PlayerMovement : MonoBehaviour
         // Movement in air
         if (!grounded)
         {
-            multiplier = 0.5f;
-            multiplierV = 0.5f;
+            multiplier = 0.2f;
+            multiplierV = 0.2f;
         }
 
         // Movement while sliding
@@ -262,8 +262,9 @@ public class PlayerMovement : MonoBehaviour
         playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, wallRunCameraTilt);
         orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
 
+
         //While WallRunning tilt the camera
-        if(Math.Abs(wallRunCameraTilt) < maxWallRunCameraTilt && isWallRunning && isWallRight)
+        if (Math.Abs(wallRunCameraTilt) < maxWallRunCameraTilt && isWallRunning && isWallRight)
         {
             wallRunCameraTilt += Time.deltaTime * maxWallRunCameraTilt * 2;
         }
